@@ -4,38 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>DFA for (1|0)*10 </title>
-
-<script>
-"use strict";
-function delta(q, c) { // (1|0)*10
-    if (q=='A' && c=='0') return 'A'
-    if (q=='B' && c=='0') return 'C'
-    if (q=='C' && c=='0') return 'A' 
-    if (c=='1') return 'B'
-    return '';  //default -- no transition
-}
-function accept(w, F='C', q='A') {
-    //w: input String
-    //F: final state(s)
-    //q: current state
-    let i = 0, txt = q
-    while (i < w.length) {
-        q = delta(q, w[i])
-        if (q == '') break
-        i++; txt += " -> "+q
-    }
-    input.selectionStart = i
-    input.selectionEnd = i+1
-    let a = (q!='' && F.includes(q))
-    return txt+'  '+(a? "Accept" : "Reject")
-}
-function test() {
-    let w = input.value, s = "  "
-    for (let c of w) s += c+"    "
-    s += '\n'+accept(w, final.value)
-    console.log(s); out.innerHTML = s
-}
-</script>
 </head>
 
 <body>
@@ -84,6 +52,36 @@ F = <input id=final type=text value=C
 </p-->
 
 <script>
+"use strict";
+function delta(q, c) { // (1|0)*10
+    if (q=='A' && c=='0') return 'A'
+    if (q=='B' && c=='0') return 'C'
+    if (q=='C' && c=='0') return 'A' 
+    if (c=='1') return 'B'
+    return '';  //default -- no transition
+}
+function accept(w, F='C', q='A') {
+    //w: input String
+    //F: final state(s)
+    //q: current state
+    let i = 0, txt = q
+    while (i < w.length) {
+        q = delta(q, w[i])
+        if (q == '') break
+        i++; txt += " -> "+q
+    }
+    input.selectionStart = i
+    input.selectionEnd = i+1
+    let a = (q!='' && F.includes(q))
+    return txt+'  '+(a? "Accept" : "Reject")
+}
+function test() {
+    let w = input.value, s = "  "
+    for (let c of w) s += c+"    "
+    s += '\n'+accept(w, final.value)
+    console.log(s); out.innerHTML = s
+}
+
     title.innerText = document.title
     sample.innerText = delta+'\n'+accept
     test()
