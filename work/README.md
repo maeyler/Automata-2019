@@ -1,3 +1,10 @@
+### Quiz week
+
+* [Lexical Analysis](https://www.wikiwand.com/en/Lexical_analysis)
+* [Lexical.html](https://maeyler.github.io/Auto/microJ/Lexical.html)
+* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs.png)
+
+
 ### Assignment 1
 due on Mon, March 11,  at 5pm
 
@@ -9,15 +16,15 @@ No report no demo on this Assignment
 
 
 ### Class work #3
-
+```
 Copy and modify RegExp.html -- add two interesting items in the menu
 
 Put your work in your repo.  Send me the link your page and a screenshot.
-
+```
 Ref:
-* https://maeyler.github.io/Auto/work/RegExp.html
-* https://maeyler.github.io/JS/sss/inspector.html
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+* [RegExp.html](https://maeyler.github.io/Auto/work/RegExp.html)
+* [Inspector](https://maeyler.github.io/JS/sss/inspector.html)
+* [RegExp in Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
 
 ### Class work #2
@@ -36,13 +43,13 @@ Bonus: Put your work in your repo (must be different from Auto)
 ```
 
 Ref:
-* https://maeyler.github.io/Auto/work/NFA1.html
-* https://maeyler.github.io/JS/hard/RegExp.html
-* https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+* [NFA1.html](https://maeyler.github.io/Auto/work/NFA1.html)
+* [RegExp.html](https://maeyler.github.io/JS/hard/RegExp.html)
+* [RegExp in W3S](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 
 
 ### Class work #1
-
+```
 1) How are these string concepts of Sec 1.5 implemented in JavaScript?
 Alphabet, empty string, length, concatenation
 
@@ -51,7 +58,7 @@ Alphabet, empty string, length, concatenation
 3) Here is a model for L = (1+0)*10 = { w | binary w ends with 10 } 
 
 Modify the code and the web page for another DFA that you choose. 
-
+```
 Ref:
-* https://maeyler.github.io/Auto/work/DFA1.html
+* [DFA1.html](https://maeyler.github.io/Auto/work/DFA1.html)
 
