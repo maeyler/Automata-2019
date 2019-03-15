@@ -71,9 +71,9 @@ function match(k) {
     else expected(k);
 }
 function expected(s) {
-    error(s+" expected  "+tok+" found");
+    error(s+" expected -- "+tok+" found");
 }
 function error(s) {
-    throw ("Char "+tok.index+": "+s);
+    throw ("At index "+tok.index+": "+s);
 }
 
