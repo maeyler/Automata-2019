@@ -27,10 +27,12 @@ May 07	10. Decision Problems, Classes P and NP
 May 14	10. NP completeness: results and examples
 </pre>
 
-### Grading 
+### Grading
+<pre>
 Midterm    20% 
 2xQuiz     10 
 4xHW       10 
 10xCW      10 
 Project    15 
 Final      35
+</pre>
