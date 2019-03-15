@@ -1,4 +1,18 @@
 "use strict";
+var tok     //current Token
+var tokens  //Token.list()
+function match(k) {
+    if (tok.kind == k) 
+        tok = tokens.pop();
+    else expected(k);
+}
+function expected(s) {
+    error(s+" expected -- "+tok+" found");
+}
+function error(s) {
+    throw ("At index "+tok.index+": "+s);
+}
+
 class Constant {
    constructor(num) { this.num = num; }
    fValue() { return this.num; }
@@ -64,16 +78,5 @@ function factor() {
     default: expected("Factor");
     }
     return null;
-}
-function match(k) {
-    if (tok.kind == k) 
-        tok = tokens.pop();
-    else expected(k);
-}
-function expected(s) {
-    error(s+" expected -- "+tok+" found");
-}
-function error(s) {
-    throw ("At index "+tok.index+": "+s);
 }
 

@@ -16,14 +16,21 @@ Feb 12	1. Languages and Automata
 Feb 19	2. Finite Automata
 Feb 26	2. Non-deterministic Finite Automata
 Mar 05	3. Regular Expressions
-Mar 12	4. Regular Languages
+Mar 12	4. Regular Languages -- Quiz
 Mar 19	5. Context-Free Languages
-Mar ??	(midterm)
+Mar 26	(Midterm)
 Apr 02	5. Recursive-descent Parsing
 Apr 09	6. Pushdown Automata
-Apr 16	Toy language: microJ
+Apr 16	Toy language: microJ -- Quiz
 Apr 30	8. Turing Machines
 May 07	10. Decision Problems, Classes P and NP
 May 14	10. NP completeness: results and examples
 </pre>
 
+### Grading 
+Midterm    20% 
+2xQuiz     10 
+4xHW       10 
+10xCW      10 
+Project    15 
+Final      35
