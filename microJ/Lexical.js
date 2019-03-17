@@ -1,7 +1,7 @@
 "use strict";
 const
-  //EXP  = '".*"|\\d+(\\.\\d+)?|[A-Za-z]\\w*|==|!=|>=|<=|\\S',
-    EXP  = /".*"|\d+(\.\d+)?|[A-Za-z]\w*|==|!=|>=|<=|\S/g,
+  //EXP  = '".*"|\\d+(\\.\\d+)?|[A-Za-z]\\w*|==|!=|>=|<=|//.*|\\S',
+    EXP  = /".*"|\d+(\.\d+)?|[A-Za-z]\w*|==|!=|>=|<=|\/\/.*|\S/g,
     LEFT = '(',    RIGHT = ')',   BEGIN = '{',   END = '}',
     COMMA = ',',   COLON = ':',   SEMICOL = ';', MOD = '%', 
     PLUS = '+',    MINUS = '-',   STAR = '*',    SLASH = '/',
@@ -34,12 +34,17 @@ class Token {
     if (!this.val) return s
     return s+' '+this.val 
   }
+  get length() {
+    let s = this.val? String(this.val) : this.kind
+    return s.length
+  }
   static getKind(s) {
     const
       EXP1 = /".*"/,         //literal
       EXP2 = /^\d+(\.\d+)?/, //number
       EXP3 = /^[A-Za-z]\w*/, //ident
-      EXP4 = /==|!=|>=|<=|[%->{}]/,  //other symbol
+      EXP4 = /\/.*\//,       //comment
+      EXP5 = /==|!=|>=|<=|[%->{}]/,  //other symbol
       KEY_STR = [VAR, IF, ELSE, FOR, WHILE, RETURN,
                  READ, PRINT, PRINTLN, TO, EOF];
     if (s[0] == '"')  //(EXP1.test(s))
@@ -49,6 +54,8 @@ class Token {
     else if (EXP3.test(s)) 
         return KEY_STR.includes(s)? s : IDENT
     else if (EXP4.test(s))
+        return UNKNOWN
+    else if (EXP5.test(s))
         return s
     else return UNKNOWN
   }
@@ -59,10 +66,11 @@ class Token {
   static list(str, ptn) {
     let exp = ptn ? new RegExp(ptn,'g') : EXP
     let y = [], n = 0
-    while (n<99999) {
+    while (n < 9999) { //avoid infinite loop
         let x = exp.exec(str)
         if (!x) break; n++
-        y.push(new Token(x[0], x.index))
+        let t = new Token(x[0], x.index)
+        if (t.kind != UNKNOWN) y.push(t)
     }
     y.push(new Token(EOF, str.length)); 
     return y

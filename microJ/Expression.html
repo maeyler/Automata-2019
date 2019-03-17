@@ -14,7 +14,7 @@
     #inpx { width: 210px; }
     #tree { width: 290px; }
     #pfix { width: 270px; }
-    #outx { font: 12px monospace; }
+    #outx { font: 16px monospace; }
   </style>
 </head>
 
@@ -57,15 +57,11 @@ function doParse() {
         console.log(e); display(e)
         return e
     } catch(x) {
+        showError(inpx)
         outx.innerText = ''
         tree.value = ''
         pfix.value = x
-        let i = tok.index
-        inpx.selectionStart = i
-        if (tok.val) 
-          i += String(tok.val).length-1
-        inpx.selectionEnd = i+1
-        inpx.focus(); reportError(x)
+        reportError(x)
     }
 }
 function doKey(evt) {

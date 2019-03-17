@@ -1,0 +1,22 @@
+expon(x) {
+  var eps, k, t, s;
+  eps = 0.000001;
+  k = 0; t = 1; s = 1;
+  while (abs(t/s) > eps)   {
+    k = k+1; t = x*t/k; s = s+t;
+    print k,"  ",t;
+    println "  ",s;
+  }
+  return s;
+}
+compExp() {
+  var p;
+  println "Exponential";
+  read "x", p;
+  while (p > 0)   {
+    println "expon = ", expon(p);
+    println "  exp = ", exp(p);
+    read "x", p;
+  }
+}
+

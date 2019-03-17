@@ -12,6 +12,11 @@ function expected(s) {
 function error(s) {
     throw ("At index "+tok.index+": "+s);
 }
+function showError(elt) {
+    elt.selectionStart = tok.index
+    elt.selectionEnd = tok.index + tok.length
+    elt.focus(); 
+}
 
 class Constant {
    constructor(num) { this.num = num; }
