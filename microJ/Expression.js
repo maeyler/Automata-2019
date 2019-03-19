@@ -53,6 +53,10 @@ class Binary {
    }
 }
 
+function binary(e) {
+    let op = tok.kind; match(op);
+    return new Binary(e, op, term());
+}
 function expression() {
     let e = (tok.kind == MINUS)?
       binary(new Constant(0)) : term();
@@ -62,13 +66,11 @@ function expression() {
 }
 function term() {
     let e = factor();
-    while (tok.kind == STAR || tok.kind == SLASH) 
-      e = binary(e);
+    while (tok.kind == STAR || tok.kind == SLASH) {
+        let op = tok.kind; match(op);
+        e = new Binary(e, op, factor());
+    }
     return e;
-}
-function binary(e) {
-    let op = tok.kind; match(op);
-    return new Binary(e, op, term());
 }
 function factor() {
     switch (tok.kind)  {
