@@ -1,22 +1,28 @@
-### Class work #4
-```
-1. Study Expression.html and show a sample derivation with these rules:
-E → T | E+T | E-T 
-T → F | T*F | T/F 
-F → n | (E)
-(use exactly 4 operations)
+### Midterm
+* [Question 1](../exam/midterm-1.jpg)
+* [Question 2-3](../exam/midterm-2.jpg)
+* [Question 4](../exam/midterm-3.jpg)
 
-2. Suggest two extensions for the grammar defined above
 
-3. Modify CFG1.html for the grammar shown below:
-S → 0S0 | 1S1 | p
-(palindromes with the mid-point mark)
-```
-Ref:
-* [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html)
-* [CFG sample](https://maeyler.github.io//Auto/work/CFG1.html)
-* [Quiz solutions](tps://maeyler.github.io/Auto/exam/Quiz%20solution.jpg)
-* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs)
+### Class work #4 
+``` 
+1. Study Expression.html and show a sample derivation with these rules: 
+E → T | E+T | E-T
+T → F | T*F | T/F
+F → n | (E) 
+(use exactly 4 operations) 
+ 
+2. Suggest two extensions for the grammar defined above 
+ 
+3. Modify CFG1.html for the grammar shown below: 
+S → 0S0 | 1S1 | p 
+(palindromes with the mid-point mark) 
+``` 
+Ref: 
+* [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html) 
+* [CFG sample](https://maeyler.github.io//Auto/work/CFG1.html) 
+* [Quiz solutions](tps://maeyler.github.io/Auto/exam/Quiz%20solution.jpg) 
+* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs) 
 
 
 ### Quiz week
