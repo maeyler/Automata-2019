@@ -6,11 +6,12 @@ const
     COMMA = ',',   COLON = ':',   SEMICOL = ';', MOD = '%', 
     PLUS = '+',    MINUS = '-',   STAR = '*',    SLASH = '/',
     REL_LT = '<',  REL_LE = '<=', REL_GT = '>',  REL_GE = '>=',  
-    REL_EQ = '==', REL_NE = '!=', ASSIGN = '=',  UNKNOWN = '???',
+    REL_EQ = '==', REL_NE = '!=', ASSIGN = '=',  POWER = '^',
     LITERAL = 'literal',   NUMBER = 'number',    IDENT = 'ident',
     VAR = "var",   IF = "if",     ELSE = "else", FOR = "for", 
     WHILE = "while", RETURN = "return",   READ = "read", 
-    PRINT = "print", PRINTLN = "println", TO = "to", EOF = 'eof';
+    PRINT = "print", PRINTLN = "println", TO = "to", 
+    UNKNOWN = '???', EOF = 'eof';
     
 class Token {
   constructor(s, i) {
@@ -44,7 +45,7 @@ class Token {
       EXP2 = /^\d+(\.\d+)?/, //number
       EXP3 = /^[A-Za-z]\w*/, //ident
       EXP4 = /\/.*\//,       //comment
-      EXP5 = /==|!=|>=|<=|[%->{}]/,  //other symbol
+      EXP5 = /==|!=|>=|<=|[%->{}\^]/,  //other symbol
       KEY_STR = [VAR, IF, ELSE, FOR, WHILE, RETURN,
                  READ, PRINT, PRINTLN, TO, EOF];
     if (s[0] == '"')  //(EXP1.test(s))
