@@ -1,8 +1,49 @@
+### Class work #5
+
+Ref:
+* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs) 
+* [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html) 
+* [Syntax Diagram](https://www.wikiwand.com/en/Syntax_diagram) 
+* [Recursive-descent Parser](https://www.wikiwand.com/en/Recursive_descent_parser) 
+
+
+### Assignment 2
+due on Monday, April 7, before 5pm
+
+Beste Soft'ta ilk haftanız, daha üçüncü gün size bir iş verdiler
+```
+- Şu aritmetik programı var ya, Hasan Bey yazmıştı...
+- Expression.html mi?
+- Evet, müşteri "fonksiyonlar da olsun" diyor
+- Hangi fonksiyonları koyalım?
+- Ne kadar çok olursa o kadar iyi
+- Math içindeki bütün fonksiyonlar?
+- Orada 40 tane fonksiyon var, hangi biriyle uğraşacaksın?
+- getOwnPropertyNames() ile hepsini bir kalemde yaparım
+- O da ne?
+- Object altında güzel bir özellik...
+- Elin değmişken bir de % işlemini ekler misin?
+- Hiç sorun değil... 
+```
+* Gramere iki yeni kural eklenecek
+```
+   T -> F | T*F | T/F | T%F
+   F -> number | (E) | ident(E)
+```
+* Hasan Bey işten ayrılmadan önce [çalışan bir jar](../microJ/exprV2.3.jar) bırakmış ama kaynak kodunu saklamış
+
+* Math içindeki tek parametreli fonksiyonları bulmak için
+```
+   F = Object.getOwnPropertyNames(Math)
+   a = F.filter(k => Math[k].length == 1)
+```
+**ÖDEVİNİZİ GÖSTERMEDEN ÖNCE REPOYA KOYMAYIN**
+
+
 ### Midterm
 * [Question 1](../exam/midterm-1.jpg)
 * [Question 2-3](../exam/midterm-2.jpg)
 * [Question 4](../exam/midterm-3.jpg)
-
 
 ### Class work #4 
 ``` 
@@ -21,7 +62,7 @@ S → 0S0 | 1S1 | p
 Ref: 
 * [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html) 
 * [CFG sample](https://maeyler.github.io//Auto/work/CFG1.html) 
-* [Quiz solutions](tps://maeyler.github.io/Auto/exam/Quiz%20solution.jpg) 
+* [Quiz solution](htps://maeyler.github.io/Auto/exam/Quiz%20solution.jpg) 
 * [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs) 
 
 
@@ -33,7 +74,7 @@ Ref:
 
 
 ### Assignment 1
-due on Mon, March 11,  at 5pm
+due on Monday, March 11, at 5pm
 
 Make a web page in your repo that colors the strings blue and the arrays red
 
