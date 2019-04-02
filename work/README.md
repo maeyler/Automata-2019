@@ -1,14 +1,5 @@
-### Class work #5
-
-Ref:
-* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs) 
-* [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html) 
-* [Syntax Diagram](https://www.wikiwand.com/en/Syntax_diagram) 
-* [Recursive-descent Parser](https://www.wikiwand.com/en/Recursive_descent_parser) 
-
-
 ### Assignment 2
-due on Monday, April 7, before 5pm
+due on Monday, April 8, before 5pm
 
 Beste Soft'ta ilk haftanız, daha üçüncü gün size bir iş verdiler
 ```
@@ -28,7 +19,7 @@ Beste Soft'ta ilk haftanız, daha üçüncü gün size bir iş verdiler
 * Gramere iki yeni kural eklenecek
 ```
    T -> F | T*F | T/F | T%F
-   F -> number | (E) | ident(E)
+   F -> n | (E) | (E)^n | i(E)
 ```
 * Hasan Bey işten ayrılmadan önce [çalışan bir jar](../microJ/exprV2.3.jar) bırakmış ama kaynak kodunu saklamış
 
@@ -40,6 +31,22 @@ Beste Soft'ta ilk haftanız, daha üçüncü gün size bir iş verdiler
 **ÖDEVİNİZİ GÖSTERMEDEN ÖNCE REPOYA KOYMAYIN**
 
 
+### Class work #5
+Modify Expression.html 
+
+1. Implement toTree() methods
+
+2. Add one more rule for power operation
+```
+   F → n | (E) | (E)^n
+```
+Ref:
+* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs) 
+* [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html) 
+* [Syntax Diagram](https://www.wikiwand.com/en/Syntax_diagram) 
+* [Recursive-descent Parser](https://www.wikiwand.com/en/Recursive_descent_parser) 
+
+
 ### Midterm
 * [Question 1](../exam/midterm-1.jpg)
 * [Question 2-3](../exam/midterm-2.jpg)
@@ -48,9 +55,9 @@ Beste Soft'ta ilk haftanız, daha üçüncü gün size bir iş verdiler
 ### Class work #4 
 ``` 
 1. Study Expression.html and show a sample derivation with these rules: 
-E → T | E+T | E-T
-T → F | T*F | T/F
-F → n | (E) 
+   E → T | E+T | E-T
+   T → F | T*F | T/F
+   F → n | (E) 
 (use exactly 4 operations) 
  
 2. Suggest two extensions for the grammar defined above 
