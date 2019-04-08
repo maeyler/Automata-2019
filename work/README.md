@@ -1,3 +1,23 @@
+### Class work #6
+
+* Modify delta() for this grammar:
+```
+	E -> TX
+	X -> ε | +TX | -TX
+	T -> FY
+	Y -> ε | *FY | /FY
+	F -> n | (E) | i(E) 
+```
+* Include several test cases such as  (n-i(n+n))/i(n*n)
+
+* Compare and contrast Recursive-descent vs PDA implementations
+
+Ref: 
+* [PDA sample](PDA1.html)
+* [Left Recursion](https://www.wikiwand.com/en/Left_recursion)
+* [microJ work](../microJ/)
+
+
 ### Assignment 2
 due on Monday, April 8, before 5pm
 
@@ -41,8 +61,8 @@ Modify Expression.html
    F → n | (E) | (E)^n
 ```
 Ref:
-* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs) 
-* [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html) 
+* [MicroJ Specs](../microJ/MicroJ%20Specs) 
+* [Expression parser](../microJ/Expression.html) 
 * [Syntax Diagram](https://www.wikiwand.com/en/Syntax_diagram) 
 * [Recursive-descent Parser](https://www.wikiwand.com/en/Recursive_descent_parser) 
 
@@ -67,17 +87,17 @@ S → 0S0 | 1S1 | p
 (palindromes with the mid-point mark) 
 ``` 
 Ref: 
-* [Expression parser](https://maeyler.github.io/Auto/microJ/Expression.html) 
-* [CFG sample](https://maeyler.github.io//Auto/work/CFG1.html) 
-* [Quiz solution](htps://maeyler.github.io/Auto/exam/Quiz%20solution.jpg) 
-* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs) 
+* [Expression parser](../microJ/Expression.html) 
+* [CFG sample](CFG1.html) 
+* [Quiz solution](../exam/Quiz%20solution.jpg) 
+* [MicroJ Specs](../microJ/MicroJ%20Specs) 
 
 
 ### Quiz week
 
 * [Lexical Analysis](https://www.wikiwand.com/en/Lexical_analysis)
-* [Lexical.html](https://maeyler.github.io/Auto/microJ/Lexical.html)
-* [MicroJ Specs](https://maeyler.github.io/Auto/microJ/MicroJ%20Specs.png)
+* [Lexical.html](../microJ/Lexical.html)
+* [MicroJ Specs](../microJ/MicroJ%20Specs.png)
 
 
 ### Assignment 1
@@ -97,7 +117,7 @@ Copy and modify RegExp.html -- add two interesting items in the menu
 Put your work in your repo.  Send me the link your page and a screenshot.
 ```
 Ref:
-* [RegExp.html](https://maeyler.github.io/Auto/work/RegExp.html)
+* [RegExp.html](RegExp.html)
 * [Inspector](https://maeyler.github.io/JS/sss/inspector.html)
 * [RegExp in Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
@@ -118,8 +138,8 @@ Bonus: Put your work in your repo (must be different from Auto)
 ```
 
 Ref:
-* [NFA1.html](https://maeyler.github.io/Auto/work/NFA1.html)
-* [RegExp.html](https://maeyler.github.io/JS/hard/RegExp.html)
+* [NFA1.html](NFA1.html)
+* [RegExp.html](RegExp.html)
 * [RegExp in W3S](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 
 
@@ -135,5 +155,5 @@ Alphabet, empty string, length, concatenation
 Modify the code and the web page for another DFA that you choose. 
 ```
 Ref:
-* [DFA1.html](https://maeyler.github.io/Auto/work/DFA1.html)
+* [DFA1.html](DFA1.html)
 

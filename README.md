@@ -21,8 +21,8 @@ Mar 19	5. Context-Free Languages
 Mar 26	(Midterm)
 Apr 02	5. Recursive-descent Parsing
 Apr 09	6. Pushdown Automata
-Apr 16	Toy language: microJ -- Quiz
-Apr 30	8. Turing Machines
+Apr 16	Toy language: microJ
+Apr 30	8. Turing Machines -- Quiz
 May 07	10. Decision Problems, Classes P and NP
 May 14	10. NP completeness: results and examples
 </pre>
