@@ -69,4 +69,7 @@ relation     ==  !=  <   <=  >   >=
 operator     =   +   -   *   /
 
 separator    (   )   {   }   ,   ;   :
+
+In-line comments // are skipped in the lexical stage
+opt means optional,  rep means repeated one or more time
 ```

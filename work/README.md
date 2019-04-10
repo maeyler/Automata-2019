@@ -1,3 +1,26 @@
+### Term Project
+
+Make a web page in your repo explaining a topic in this course, with related software, which may be used in teaching BLM 320
+
+
+### Assignment 4
+due on Monday, May 6, before 5pm
+
+Show the final version of your project
+
+
+### Assignment 3
+due on Monday, April 22, before 5pm
+
+* Complete all class works in you repo
+
+* Modify microJ1 parser with two rules:
+```
+  identList → withValue | identList , withValue
+
+  withValue → ident | ident = number
+```
+
 ### Class work #6
 
 * Modify delta() for this grammar:
@@ -84,8 +107,8 @@ Ref:
 2. Suggest two extensions for the grammar defined above 
  
 3. Modify CFG1.html for the grammar shown below: 
-S → 0S0 | 1S1 | p 
-(palindromes with the mid-point mark) 
+   S → 0S0 | 1S1 | p 
+   (palindromes with the mid-point mark) 
 ``` 
 Ref: 
 * [Expression parser](../microJ/Expression.html) 
@@ -124,19 +147,19 @@ Ref:
 
 
 ### Class work #2
-```
+
 Modify and combine DFA & NFA for  L = (1+0)*00
 Find an array of integers less than 50 accepted by each automaton
 Do the same for the RegExp  e = /00$/
-
-     let a = [] 
-     for (let n=1; n<50; n++) {
-          let w = n.toString(2)  // to binary
-          if (accept(w)) a.push(n);
-     }
-
-Bonus: Put your work in your repo (must be different from Auto)
 ```
+  let a = [] 
+  for (let n=1; n<50; n++) {
+      let w = n.toString(2)  // to binary
+      if (accept(w)) a.push(n);
+  }
+```
+Bonus: Put your work in your repo (must be different from Auto)
+
 
 Ref:
 * [NFA1.html](NFA1.html)
@@ -145,7 +168,7 @@ Ref:
 
 
 ### Class work #1
-```
+
 1) How are these string concepts of Sec 1.5 implemented in JavaScript?
 Alphabet, empty string, length, concatenation
 
@@ -154,7 +177,7 @@ Alphabet, empty string, length, concatenation
 3) Here is a model for L = (1+0)*10 = { w | binary w ends with 10 } 
 
 Modify the code and the web page for another DFA that you choose. 
-```
+
 Ref:
 * [DFA1.html](DFA1.html)
 

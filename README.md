@@ -22,9 +22,10 @@ Mar 26	(Midterm)
 Apr 02	5. Recursive-descent Parsing
 Apr 09	6. Pushdown Automata
 Apr 16	Toy language: microJ
-Apr 30	8. Turing Machines -- Quiz
-May 07	10. Decision Problems, Classes P and NP
-May 14	10. NP completeness: results and examples
+Apr 25	8. Turing Machines [ek ders]
+Apr 30	10. Classes P and NP -- Quiz
+May 07	[class work]
+May 14	Term project
 </pre>
 
 ### Grading
