@@ -2,6 +2,11 @@
 
 Make a web page in your repo explaining a topic in this course, with related software, which may be used in teaching BLM 320
 
+### Class work #7
+
+* Write a small microJ program
+
+* [microJ Level 3](../microJ/microJ3.html)
 
 ### Assignment 4
 due on Monday, May 6, before 5pm

@@ -1,8 +1,6 @@
 ﻿## Formal Languages and Automata Theory
 
-**Attendance and assignments are required**
-
-_Derse devam ve düzenli ödev yapmak gerekiyor_
+[Work files](https://maeyler.github.io/Auto/work/)
 
 ### Course Contents
 Classification of automata and formal languages. Finite state machines, regular languages and their limitations. Push-down automata and context-free languages. Normal-form grammars. Context-sensitive languages. Turing machines, halting problem and unsolvability. NP completeness. 
