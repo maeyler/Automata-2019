@@ -5,3 +5,4 @@ microJ (Level 3) was implemented in 4 stages:
 * [microJ1](microJ1.html) Compile a single method (Level 1)
 * [microJ3](microJ3.html) Compile and interprete (from local file)
 
+![MicroJ Specs](MicroJ%20Specs.png) 
